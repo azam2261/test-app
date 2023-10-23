@@ -13,6 +13,7 @@ return new class extends Migration {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->char('mobile', 11)->unique();
+            $table->char('mobile_otp', 6)->unique();
             $table->string('firstname', 128)->nullable();
             $table->string('lastname', 256)->nullable();
             $table->timestamp('mobile_verified_at')->nullable();
