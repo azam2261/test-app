@@ -13,6 +13,7 @@ class User extends Authenticatable
 
     protected $fillable = [
         'mobile',
+        'mobile_otp',
         'firstname',
         'lastname',
         'mobile_verified_at'
